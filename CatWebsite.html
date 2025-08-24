@@ -1,0 +1,389 @@
+<head>
+  <title>Cat Gallery</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Card styling */
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+      transition: filter 0.3s ease;
+    }
+
+    .card-body {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card .btn {
+      margin-top: auto;
+      transition: all 0.3s ease;
+    }
+
+    .col-md-4 {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .card:hover {
+      border: 1px solid #b17ac6;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+      transform: scale(1.03);
+    }
+
+    .card:hover .card-img-top {
+      filter: brightness(1.1);
+    }
+
+    .card .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Background image */
+    body {
+      background-image: url('https://images.pexels.com/photos/9658949/pexels-photo-9658949.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* Hero heading */
+    .hero-heading {
+      color: #36035a;
+      font-size: 48px;
+      font-family: 'Georgia', serif;
+      margin-bottom: 10px;
+    }
+
+    .hero-subtext {
+      color: #555;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    /* Price */
+    .price {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #6f42c1;
+      margin-top: 10px;
+    }
+
+    /* Optional badges */
+    .badge-custom {
+      font-size: 0.8rem;
+      background-color: #ffc107;
+      color: #000;
+      padding: 5px 8px;
+      border-radius: 4px;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+
+</head>
+    <title>Cat Harmony</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Cat Harmony</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Discover</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Breeds
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Persian Purrs</a></li>
+            <li><a class="dropdown-item" href="#">Siamese Serenades</a></li>
+            <li><a class="dropdown-item" href="#">Maine Coon Melodies</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cats
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Kitten Cuties</a></li>
+            <li><a class="dropdown-item" href="#">Senior Whiskers</a></li>
+            <li><a class="dropdown-item" href="#">Rescue Royals</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Moods
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Playful Pounces</a></li>
+            <li><a class="dropdown-item" href="#">Calm Cuddles</a></li>
+            <li><a class="dropdown-item" href="#">Sleepy Snuggles</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Events</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="my-5">
+  <div class="p-5 text-center bg-light rounded-3">
+    <h1 class="text-dark">Welcome to the World of Whiskers!</h1>
+    <p class="lead">Browse adorable cats, learn about breeds, and find your purr-fect match.</p>
+    <a href="#" class="btn btn-primary btn-lg">Explore Now</a>
+  </div>
+</div>
+
+
+<div class="text-center">
+    <h1 class="hero-heading">Cat Harmony Hub</h1>
+    <p class="hero-subtext">Exploring cats with 'Cat Harmony'</p>
+</div>
+
+<div id="catCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.pexels.com/photos/24613763/pexels-photo-24613763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500" class="d-block w-100 hero-img" alt="Kittens 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500" class="d-block w-100 hero-img" alt="Kittens 2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/27378771/pexels-photo-27378771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500" class="d-block w-100 hero-img" alt="Kittens 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#catCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#catCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#catCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#catCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+<div class="container my-5">
+<h2 class="text-center mb-4" style="font-family: 'Georgia', serif;">
+    Featured Cats
+</h2>
+
+  <div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/33146632/pexels-photo-33146632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500" class="card-img-top" alt="Ragdoll Cat">
+      <div class="card-body">
+        <h5 class="card-title">Ragdoll</h5>
+        <p class="card-text">A gentle, affectionate cat known for its striking blue eyes and tendency to go limp when held.</p>
+        <p class="price" style="font-weight: bold; color: #6f42c1;">Price: ₹12,000</p>
+        <a href="#" class="btn btn-outline-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/7445034/pexels-photo-7445034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500" class="card-img-top" alt="Persian Cat">
+      <div class="card-body">
+        <h5 class="card-title">Persian</h5>
+        <p class="card-text">A calm, elegant breed with a luxurious long coat and a sweet, gentle temperament.</p>
+        <p class="price" style="font-weight: bold; color: #6f42c1;">Price: ₹12,000</p>
+        <a href="#" class="btn btn-outline-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/27276478/pexels-photo-27276478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500" class="card-img-top" alt="Japanese Bobtail Cat">
+      <div class="card-body">
+        <h5 class="card-title">Japanese Bobtail</h5>
+        <p class="card-text">Intelligent cat known for its distinctive pom-pom tail and lively personality.</p>
+        <p class="price" style="font-weight: bold; color: #6f42c1;">Price: ₹18,000</p>
+        <a href="#" class="btn btn-outline-primary">More Info</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+  <div class="card">
+    <img src="https://images.pexels.com/photos/6869634/pexels-photo-6869634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500" alt="Scottish Fold Cat" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Scottish Fold</h5>
+      <p class="card-text">Known for its unique folded ears, round face, and affectionate, calm personality.</p>
+      <p class="price" style="font-weight: bold; color: #6f42c1;">Price: ₹15,200</p>
+      <a href="#" class="btn btn-outline-primary">More Info</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100">
+    <img src="https://images.pexels.com/photos/17987989/pexels-photo-17987989.jpeg" class="card-img-top" alt="Russian Blue Cat">
+    <div class="card-body">
+      <h5 class="card-title">Russian Blue</h5>
+      <p class="card-text">Quiet, intelligent, and affectionate cat with a striking silvery-blue coat and vivid green eyes.</p>
+      <p class="price" style="font-weight: bold; color: #6f42c1;">Price: ₹19,900</p>
+      <a href="#" class="btn btn-outline-primary">More Info</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100">
+    <img src="https://images.pexels.com/photos/31236063/pexels-photo-31236063.jpeg" class="card-img-top" alt="Elegant Siamese Cat with Blue Eyes">
+    <div class="card-body">
+      <h5 class="card-title">Siamese</h5>
+      <p class="card-text">A sleek, vocal, and affectionate cat known for its striking blue eyes and pointed coat pattern.</p>
+      <p class="price" style="font-weight: bold; color: #6f42c1;">Price: ₹13,750</p>
+      <a href="#" class="btn btn-outline-primary">More Info</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100">
+    <img src="https://images.pexels.com/photos/2034259/pexels-photo-2034259.jpeg" alt="Cat Sitting Beside Window">
+    <div class="card-body">
+      <h5 class="card-title">British Shorthair</h5>
+      <p class="card-text">A calm, sturdy cat with a plush coat and a charmingly round face.</p>
+      <p class="price" style="font-weight: bold; color: #6f42c1;">Price: ₹20,000</p>
+      <a href="#" class="btn btn-outline-primary">More Info</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100">
+    <img src="https://images.pexels.com/photos/32152152/pexels-photo-32152152.jpeg" alt="Fluffy Himalayan Cat with Striking Blue Eyes">
+    <div class="card-body">
+      <h5 class="card-title">Fluffy Himalayan</h5>
+      <p class="card-text">Sweet-natured, fluffy cat with striking blue eyes and a luxurious, long coat.</p>
+      <p class="price" style="font-weight: bold; color: #6f42c1;">Price: ₹21,000</p>
+      <a href="#" class="btn btn-outline-primary">More Info</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100">
+    <img src="https://images.pexels.com/photos/9797090/pexels-photo-9797090.jpeg" alt="White Furry Cat with Heterochromia">
+    <div class="card-body">
+      <h5 class="card-title">Turkish Angora</h5>
+      <p class="card-text">A graceful, playful cat with a silky, flowing coat and a lively personality.</p>
+      <p class="price" style="font-weight: bold; color: #6f42c1;">Price: ₹16,400</p>
+      <a href="#" class="btn btn-outline-primary">More Info</a>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+          How do I adopt a cat?
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          You can adopt by filling out our adoption form and visiting our nearest cat shelter.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+          Are these cats vaccinated?
+        </button>
+      </h2>
+      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes, all cats listed are fully vaccinated and regularly health-checked.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <form>
+    <div class="mb-3">
+      <label for="nameInput" class="form-label">Your Name</label>
+      <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="messageTextarea" class="form-label">Message</label>
+      <textarea class="form-control" id="messageTextarea" rows="4" placeholder="Your message..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</div>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+    <footer class="bg-dark text-light text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 Cat Harmony. All rights reserved.</p>
+    <div>
+      <a href="#" class="text-light me-3">Privacy Policy</a>
+      <a href="#" class="text-light me-3">Terms</a>
+      <a href="#" class="text-light">Contact</a>
+    </div>
+  </div>
+</footer>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  🎉 Thanks for contacting us! We'll get back to you soon.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+</body>
+</html>
